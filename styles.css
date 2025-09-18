@@ -1,0 +1,30 @@
+html,body{margin:0;padding:0;height:100%;background:#0b0e14;color:#eaeaea;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+#game{display:block;width:100vw;height:100vh;touch-action:none;background:#0a0f16;image-rendering:pixelated}
+
+/* HUD */
+.hud{position:fixed;left:12px;top:12px;z-index:3;background:linear-gradient(90deg,#0e1522aa,#0e152200);padding:8px 10px;border-radius:8px;border:1px solid #1f2b40}
+.hud .row{display:flex;gap:12px;align-items:center}
+.logo{font-weight:700}
+#quest{font-size:13px;opacity:.9;margin-top:4px}
+#stats{font-size:13px;opacity:.85}
+#tips{position:fixed;right:12px;bottom:12px;z-index:3;font-size:12px;opacity:.7;background:#0e1522aa;border:1px solid #1f2b40;padding:6px 8px;border-radius:6px}
+
+/* Joystick */
+#joystick{position:fixed;left:14px;bottom:88px;z-index:4;width:140px;height:140px}
+#joy-base{position:absolute;left:0;top:0;width:140px;height:140px;border-radius:50%;background:#0e152255;border:1px solid #2a3a55}
+#joy-knob{position:absolute;left:55px;top:55px;width:30px;height:30px;border-radius:50%;background:#6db2ffaa;border:1px solid #9bd1ff}
+
+/* Buttons */
+#buttons{position:fixed;right:16px;bottom:32px;z-index:4;display:flex;gap:12px;flex-wrap:wrap;max-width:50vw;justify-content:flex-end}
+#buttons button{min-width:68px;min-height:68px;border-radius:50%;border:1px solid #2a3a55;background:#152035cc;color:#e8f2ff;font-weight:700}
+#buttons button:active{transform:scale(.96)}
+
+/* Panel/Menu */
+.panel{position:fixed;inset:0;background:#0c121bcc;backdrop-filter:saturate(1.1) blur(2px);z-index:5;padding:18px}
+.hidden{display:none}
+.panel-row{display:flex;gap:18px}
+.panel-col{flex:1;background:#0e1522aa;border:1px solid #1f2b40;padding:12px;border-radius:10px;min-height:200px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.grid .slot{background:#0a121f;border:1px solid #1f2b40;border-radius:6px;min-height:40px;display:flex;align-items:center;justify-content:center;font-size:12px;opacity:.9}
+.panel .foot{justify-content:flex-end}
+.panel button{padding:8px 12px;border-radius:8px;border:1px solid #2a3a55;background:#152035cc;color:#e8f2ff}
