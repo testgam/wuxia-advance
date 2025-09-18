@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <title>Wuxia Advance</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hud">
+    <div class="row">
+      <div class="logo">Wuxia Advance</div>
+      <div id="stats"></div>
+    </div>
+    <div id="quest"></div>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <!-- Touch controls -->
+  <div id="joystick">
+    <div id="joy-base"></div>
+    <div id="joy-knob"></div>
+  </div>
+  <div id="buttons">
+    <button id="btn-attack">Đánh</button>
+    <button id="btn-skill">Kiếm Khí</button>
+    <button id="btn-dash">Lướt</button>
+    <button id="btn-talk">E</button>
+  </div>
+
+  <!-- Panel / Menu -->
+  <div id="panel" class="panel hidden">
+    <div class="panel-row">
+      <div class="panel-col">
+        <h3>Nhân vật</h3>
+        <div id="char"></div>
+      </div>
+      <div class="panel-col">
+        <h3>Túi đồ</h3>
+        <div id="bag" class="grid"></div>
+      </div>
+    </div>
+    <div class="panel-row foot">
+      <button id="btn-close">Đóng</button>
+      <button id="btn-save">Lưu</button>
+      <button id="btn-load">Tải</button>
+    </div>
+  </div>
+
+  <div id="tips">Menu: M - Lưu: P - Tải: O</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
